@@ -5,10 +5,7 @@ import (
 	"fmt"
 	"github.com/go-redis/redismock/v8"
 	"log"
-	"os"
-	"sync"
 	"testing"
-	"time"
 )
 
 // 加锁成功，并执行业务代码
@@ -40,4 +37,3 @@ func TestLockSuccess(t *testing.T) {
 	fmt.Println("任务执行")
 	log.Println("Execute Business Code: end")
 }
-
